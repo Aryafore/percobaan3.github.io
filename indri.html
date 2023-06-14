@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf -8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="weh.css" />
+  </head>
+  <body>
+    <audio
+      id="background-audio"
+      src="https://mcdn.podbean.com/mf/web/j9hq95/y2mate_mp3cutnet_1_9rm3r.mp3.mp3"
+      autoplay
+      loop
+    ></audio> 
+
+    <div class="scroll-container">
+      <div class="scroll-section">
+        <img
+          src="https://media.tenor.com/3HXj24goQicAAAAj/tkthao219-quby.gif"/>
+        <p class="animated-paragraph">Hai indri dwi prastiwi</p>
+        </p>
+      </div>
+      <div class="scroll-section">
+        <img
+          src="https://media.tenor.com/DUCwmYGyFygAAAAC/peachandgoma-peach.gif"/>
+        <p class="animated-paragraph" style="animation-duration: 6.5s">
+          Cie yang Nambah Tua nih  &#128540;
+        </p>
+        
+      </div>
+      <div class="scroll-section">
+        <img src="https://media.tenor.com/Beyd-TNKqVMAAAAj/bubududu-panda.gif"/>
+        <p class="animated-paragraph" style="animation-duration: 7.5s">
+          Gak banyak ucapan di tahun ini 
+        </p> <p class="animated-paragraph" style="animation-duration: 8.5s">
+          Semoga di tahun ini  
+        </p>
+      </p> <p class="animated-paragraph" style="animation-duration: 9.5s">
+      apa yang kamu mau tercapai  
+      </p>
+      </div>
+      <div class="scroll-section">
+        <img src="https://i.pinimg.com/originals/fa/8a/ed/fa8aed040112fa7ae04b00655b895102.gif" alt="Image 4" />
+        <p class="animated-paragraph" style="animation-duration: 2s">
+        Semoga tetap kuat,
+        </p>
+        <p class="animated-paragraph" style="animation-duration: 2s">
+        sabar dan tabah dalam
+        </p>
+        <p class="animated-paragraph" style="animation-duration: 2s">
+        menjalani hidup yang keras ini
+        </p>
+      </div>
+      <div class="scroll-section">
+        <img
+          src="https://media.tenor.com/2aSuT7p_a_UAAAAi/peachcat-cat.gif"
+          alt="Image 5"
+        />
+        <p class="animated-paragraph" style="animation-duration: 2s">
+          Sehat selalu dan Tahun ini,
+          <p class="animated-paragraph" style="animation-duration: 2s">
+          Semoga diberikan Kebahagian 
+      </div> <div class="scroll-section">
+        <img
+          src="https://media.tenor.com/FrakNhjqLFcAAAAi/tkthao219-quby.gif"
+          alt="Image 5"
+        />
+        <p class="animated-paragraph" style="animation-duration: 13s">
+        beli milkkita ke kota tua,
+        <p class="animated-paragraph" style="animation-duration: 17s">
+        kapan kita foto berdua
+        <p class="animated-paragraph" style="animation-duration: 20s">
+        anjay kelazzz wkwkwkw
+      </div>
+      <div class="scroll-section">
+        <img
+          src="https://media.tenor.com/inhg61kTkrwAAAAi/cute.gif"
+          alt="Image 5"
+        />
+        Pencet lagi yaa indrii
+        <p>Ada kejutan buat kamu hehe</p>
+      </div>
+     
+      <div class="end-section">
+        <img
+          class="end-image"
+          src="https://media.tenor.com/MTQr74ANvmAAAAAj/tkthao219-peach.gif"
+          alt="End Image"
+        />
+      </div>
+    </div>
+    <div class="scroll-controls">
+      <button onclick="scrollToNextSection()" class="neon-text">Geser</button>
+    </div>
+
+    <script>
+      function scrollToNextSection() {
+        var scrollContainer = document.querySelector(".scroll-container");
+        var scrollSections = document.querySelectorAll(".scroll-section");
+        var currentIndex = Math.floor(
+          scrollContainer.scrollLeft / scrollContainer.offsetWidth
+        );
+        var nextIndex = currentIndex + 1;
+        if (nextIndex < scrollSections.length) {
+          scrollContainer.scrollTo({
+            left: scrollSections[nextIndex].offsetLeft,
+            behavior: "smooth",
+          });
+        } else {
+          // Pindah ke halaman lain
+          window.location.href = "haloo.html";
+        }
+      }
+    </script>
+  </body>
+</html>
